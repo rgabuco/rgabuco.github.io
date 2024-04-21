@@ -1,16 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <script src="scripts.js"></script>
-  <title>Website Under Construction</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Website Under Construction</h1>
-    <p>We're currently working on our website. Please check back soon!</p>
-  </div>
+    <header>
+        <h1>About Me</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" id="home">Home</a></li>
+                <li><a href="./htmls/resume.html" id="resume">Resume</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">Cheat Sheets</button>
+                    <div class="dropdown-content">
+                        <a href="./htmls/html_cheat_sheet.html" id="html-cheat-sheet">HTML</a>
+                        <a href="./htmls/css_cheat_sheet.html" id="css-cheat-sheet">CSS</a>
+                        <a href="./htmls/js_cheat_sheet.html" id="js-cheat-sheet">JavaScript</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home_main">
+        <div id="home_main_container">
+            <div id="home_main_img">
+                <img src="./assets/profile-pic.png" alt="Rudy Gabuco profile picture" id="home_profile_img">
+            </div>
+            <div id="home_main_texts">
+                <div id="home_main_texts_text">
+                    <p>Hello, I'm</p>
+                    <h3>Rudy Gabuco Jr</h3>
+                    <p>Software Developer</p>
+                </div>
+                <div id="home_main_texts_socials">
+                    <img src="./assets/linkedin.png" alt="My LinkedIn profile" 
+                    class="icon" onclick="window.open('https://www.linkedin.com/in/rudygabuco/', '_blank')">
+                    <img src="./assets/github.png" alt="My Github profile" 
+                    class="icon" onclick="window.open('https://github.com/rgabuco', '_blank')">          
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="script.js"></script>
 </body>
 </html>
