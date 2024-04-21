@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <div class="header_icons">
+            <img src="../assets/javascript.png" alt="js icon">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html" id="home">Home</a></li>
+                <li><a href="resume.html" id="resume">Resume</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">Cheat Sheets</button>
+                    <div class="dropdown-content">
+                        <a href="html_cheat_sheet.html" id="html-cheat-sheet">HTML</a>
+                        <a href="css_cheat_sheet.html" id="css-cheat-sheet">CSS</a>
+                        <a href="js_cheat_sheet.html" id="js-cheat-sheet">JavaScript</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+   </header>
+    
+    <main id="js_main">
+        <div class="cheatSheet_main_container">
+            <div class="header_container">
+                <h2>JavaScript Cheat Sheet</h2>
+            </div>
+            <div class="notes_container">
+                <div class="cheatSheet_main_container-left">
+                    <div class="js_note">
+                        <h2>Variables</h2>
+                        <p>Declaring and assigning variables:</p>
+                        <code>let x = 5;</code><br>
+                        <code>const PI = 3.14;</code><br>
+                        <code>var y = "Hello";</code>
+                    </div>
+                    <div class="js_note">
+                        <h2>Conditional Statements</h2>
+                        <p>Using if, else if, and else:</p>
+                        <code>let age = 18;</code><br>
+                        <code>if (age >= 18) {</code><br>
+                        <code>   alert("You are an adult.");</code><br>
+                        <code>} else {</code><br>
+                        <code>   alert("You are a minor.");</code><br>
+                        <code>}</code>
+                    </div>
+                    <div class="js_note">
+                        <h2>Loops</h2>
+                        <p>Iterating with for and while loops:</p>
+                        <code>for (let i = 0; i < 5; i++) {</code><br>
+                        <code>   console.log(i);</code><br>
+                        <code>}</code><br>
+                        <code>let i = 0;</code><br>
+                        <code>while (i < 5) {</code><br>
+                        <code>   console.log(i);</code><br>
+                        <code>   i++;</code><br>
+                        <code>}</code>
+                    </div>
+                    <div class="js_note">
+                        <h2>Objects</h2>
+                        <p>Creating and accessing object properties:</p>
+                        <code>let person = {</code><br>
+                        <code>   name: "John",</code><br>
+                        <code>   age: 30</code><br>
+                        <code>};</code><br>
+                        <code>console.log(person.name);</code>
+                    </div>
+                    <div class="js_note">
+                        <h2>Functions</h2>
+                        <p>Defining and calling functions:</p>
+                        <code>function greet(name) {</code><br>
+                        <code>   return "Hello, " + name + "!";</code><br>
+                        <code>}</code><br>
+                        <code>alert(greet("John"));</code>
+                    </div>
+                    <div class="js_note">
+                        <h2>String Methods</h2>
+                        <p>Using built-in string methods:</p>
+                        <code>let message = "Hello, world!";</code><br>
+                        <code>console.log(message.toUpperCase());</code><br>
+                        <code>console.log(message.length);</code>
+                    </div>
+                    <div class="js_note">
+                        <h2>Event Handling</h2>
+                        <p>Attaching event listeners to elements:</p>
+                        <code>document.getElementById("myButton").addEventListener("click", function() {</code><br>
+                        <code>   alert("Button clicked!");</code><br>
+                        <code>});</code>
+                    </div>
+                </div>
+                <div class="cheatSheet_main_container-right">            
+                    <div class="js_note">
+                        <h2>Arrow Functions</h2>
+                        <p>Using concise syntax for functions:</p>
+                        <code>const add = (a, b) => a + b;</code><br>
+                        <code>console.log(add(3, 5)); // Output: 8</code>
+                    </div>
+                    <div class="js_note">
+                        <h2>Template Literals</h2>
+                        <p>Using backticks to create multi-line strings:</p>
+                        <code>const name = "John";</code><br>
+                        <code>console.log(`Hello, ${name}!`); // Output: Hello, John!</code>
+                    </div>
+                    <div class="js_note">
+                        <h2>Arrays</h2>
+                        <p>Creating and accessing arrays:</p>
+                        <code>let colors = ["red", "green", "blue"];</code><br>
+                        <code>console.log(colors[0]);</code><br>
+                        <code>colors.push("yellow");</code>
+                    </div>
+                    <div class="js_note">
+                        <h2>Asynchronous JavaScript</h2>
+                        <p>Working with asynchronous code using promises:</p>
+                        <code>fetch ("https://api.com/data")</code><br>
+                        <code>   .then(response => response.json())</code><br>
+                        <code>   .then(data => console.log(data));</code>
+                    </div>
+                    <div class="js_note">
+                        <h2>DOM Manipulation</h2>
+                        <p>Accessing and modifying HTML elements:</p>
+                        <code>let element = document.getElementById("myElement");</code><br>
+                        <code>element.textContent = "Hello, world!";</code>
+                    </div>
+                    <div class="js_note">
+                        <h2>Selecting Elements</h2>
+                        <p>Use <code>document.getElementById()</code> to select an element by its ID.</p>
+                        <p>Use <code>document.querySelector()</code> to select the first element that matches a CSS selector.</p>
+                        <p>Use <code>document.querySelectorAll()</code> to select all elements that match a CSS selector.</p>
+                    </div>
+                    <div class="js_note">
+                        <h2>Traversing the DOM</h2>
+                        <p>Use <code>parentNode</code> to access the parent node of an element.</p>
+                        <p>Use <code>childNodes</code> to access a collection of child nodes.</p>
+                        <p>Use <code>previousSibling</code> and <code>nextSibling</code> to access adjacent nodes.</p>
+                        <p>Use <code>firstChild</code> and <code>lastChild</code> to access the first and last child nodes.</p>
+                    </div>
+                    <div class="js_note">
+                        <h2>Manipulating Elements</h2>
+                        <p>Use <code>createElement()</code> to create a new element.</p>
+                        <p>Use <code>appendChild()</code> to append a child element to a parent element.</p>
+                        <p>Use <code>removeChild()</code> to remove a child element from its parent.</p>
+                        <p>Use <code>setAttribute()</code> to set attributes on an element.</p>
+                        <p>Use <code>innerHTML</code> to get or set the HTML content of an element.</p>
+                    </div>
+                </div>
+            </div> <!-- END of notes_container -->
+        </div> <!-- END of cheatSheet_main_container -->
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>

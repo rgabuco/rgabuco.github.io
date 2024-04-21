@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <div class="header_icons">
+            <img src="../assets/css.png" alt="css icon">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html" id="home">Home</a></li>
+                <li><a href="resume.html" id="resume">Resume</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">Cheat Sheets</button>
+                    <div class="dropdown-content">
+                        <a href="html_cheat_sheet.html" id="html-cheat-sheet">HTML</a>
+                        <a href="css_cheat_sheet.html" id="css-cheat-sheet">CSS</a>
+                        <a href="js_cheat_sheet.html" id="js-cheat-sheet">JavaScript</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+   </header>
+    
+    <main id="css_main">
+        <div class="cheatSheet_main_container">
+            <div class="header_container">
+                <h2>CSS Cheat Sheet</h2>
+            </div>
+            <div class="notes_container">
+                <div class="cheatSheet_main_container-left">
+                    <div class="css_note">
+                        <h2>Selectors</h2>
+                        <p>Selects the HTML element to style</p>
+                        <code>selector { property: value; }</code><br>
+                        <h3>Class Selector</h3>
+                        <code>.class { property: value; }</code><br>
+                        <h3>ID Selector</h3>
+                        <code>#id { property: value; }</code><br>
+                        <h3>Universal Selector</h3>
+                        <code>* { property: value; }</code><br>
+                        <h3>Descendant Selector</h3>
+                        <code>parent child { property: value; }</code><br>
+                        <h3>Adjacent Sibling Selector</h3>
+                        <code>element1 + element2 { property: value; }</code><br>
+                        <h3>Attribute Selector</h3>
+                        <code>[attribute=value] { property: value; }</code><br>
+                        <h3>Pseudo-class Selector</h3>
+                        <code>selector:pseudo-class { property: value; }</code><br>
+                        <h3>Grouping Selector</h3>
+                        <code>selector1, selector2 { property: value; }</code><br>
+                    </div>
+                    <div class="css_note">
+                        <h2>List Styles</h2>
+                        <p>List elements can be styled using various properties to change their appearance and layout.</p>
+                        <code>
+                            list-style-type, list-style-image, list-style-position, list-style
+                        </code>
+                    </div>
+                    <div class="css_note">
+                        <h2>Text Properties</h2>
+                        <p>Control text alignment, decoration, transformation, and spacing</p>
+                        <code>text-align, text-decoration, text-transform, letter-spacing</code>
+                    </div>
+                    <div class="css_note">
+                        <h2>Background Properties</h2>
+                        <p>Set background color, image, size, position, and repeat</p>
+                        <code>background-color, background-image, background-size, background-position</code>
+                    </div>
+                    <div class="css_note">
+                        <h2>Border Properties</h2>
+                        <p>Define border width, style, and color</p>
+                        <code>border-width, border-style, border-color</code>
+                    </div>
+                    <div class="css_note">
+                        <h2>Font Properties</h2>
+                        <p>Set font family, size, weight, style, and more</p>
+                        <code>font-family, font-size, font-weight, font-style</code>
+                    </div>
+                </div>
+                <div class="cheatSheet_main_container-right">
+                    <div class="css_note">
+                        <h2>Margin and Padding</h2>
+                        <p>Control spacing outside and inside an element</p>
+                        <code>margin, padding</code>
+                    </div>
+                    <div class="css_note">
+                        <h2>Width and Height</h2>
+                        <p>Set the width and height of an element</p>
+                        <code>width, height</code>
+                    </div>
+                    <div class="css_note">
+                        <h2>Box Model</h2>
+                        <p>Box model is essential for layout design. It consists of content, padding, border, and margin.</p>
+                        <code>content-box, padding-box, border-box</code>
+                    </div>
+                    <div class="css_note">
+                        <h2>Display Property</h2>
+                        <p>Change how elements are displayed in the layout</p>
+                        <code>display</code>
+                    </div>
+                    <div class="css_note">
+                        <h2>Positioning</h2>
+                        <p>Control the position of an element</p>
+                        <code>position, top, right, bottom, left</code>
+                    </div>
+                    <div class="css_note">
+                        <h2>Flexbox</h2>
+                        <p>Layout mode for arranging elements in a container</p>
+                        <code>display: flex, flex-direction, justify-content, align-items</code>
+                    </div>
+                    <div class="css_note">
+                        <h2>Grid</h2>
+                        <p>Layout mode for creating grid-based designs</p>
+                        <code>display: grid, grid-template-columns, grid-template-rows</code>
+                    </div>
+                    <div class="css_note">
+                        <h2>Transforms</h2>
+                        <p>Apply transformations like rotation, scaling, and skewing</p>
+                        <code>transform, rotate, scale, skew</code>
+                    </div>
+                    <div class="css_note">
+                        <h2>Transitions</h2>
+                        <p>Add smooth animations to CSS properties</p>
+                        <code>transition, transition-property, transition-duration</code>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>

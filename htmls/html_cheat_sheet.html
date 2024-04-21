@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <div class="header_icons">
+            <img src="../assets/html.png" alt="html icon">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html" id="home">Home</a></li>
+                <li><a href="resume.html" id="resume">Resume</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">Cheat Sheets</button>
+                    <div class="dropdown-content">
+                        <a href="html_cheat_sheet.html" id="html-cheat-sheet">HTML</a>
+                        <a href="css_cheat_sheet.html" id="css-cheat-sheet">CSS</a>
+                        <a href="js_cheat_sheet.html" id="js-cheat-sheet">JavaScript</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+   </header>
+    
+    <main id="html_main">
+        <div class="cheatSheet_main_container">
+            <div class="header_container">
+                <h2>HTML Cheat Sheet</h2>
+            </div>
+            <div class="notes_container">
+                <div class="cheatSheet_main_container-left">
+                    <div class="html_note">
+                        <h2>Document Structure</h2>
+                        <p>HTML documents are structured using elements, which are marked up with tags.</p>
+                        <code>&lt;!DOCTYPE html&gt;</code>
+                        <code>&lt;html&gt;</code>
+                        <code>&lt;head&gt;</code>
+                        <code>&lt;title&gt;</code>
+                        <code>&lt;body&gt;</code>
+                      </div>
+                      <div class="html_note">
+                        <h2>Meta Tags</h2>
+                        <p>Meta tags provide metadata about the HTML document.</p>
+                        <code>&lt;meta charset="UTF-8"&gt;</code>
+                        <code>&lt;meta name="description" content="description"&gt;</code>
+                      </div>
+                      <div class="html_note">
+                        <h2>HTML Layouts</h2>
+                        <p>HTML layouts are created using different elements such as:</p>
+                        <code>&lt;header&gt;, </code>
+                        <code>&lt;nav&gt;, </code>
+                        <code>&lt;section&gt;, </code>
+                        <code>&lt;article&gt;, </code>
+                        <code>&lt;aside&gt;, </code>
+                        <code>&lt;footer&gt;</code>
+                      </div>
+                      <div class="html_note">
+                        <h2>Heading Tags</h2>
+                        <p>HTML has six levels of headings, from <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>, where <code>&lt;h1&gt;</code> is the highest level.</p>
+                      </div>
+                      <div class="html_note">
+                        <h2>Paragraphs</h2>
+                        <p>Paragraphs are defined with the <code>&lt;p&gt;</code> tag.</p>
+                      </div>
+                      <div class="html_note">
+                        <h2>Links</h2>
+                        <p>Links are created with the &lt;a&gt; (anchor) tag.</p>
+                        <code>&lt;a href="url"&gt;link text&lt;/a&gt;</code>
+                      </div>
+                      <div class="html_note">
+                        <h2>Images</h2>
+                        <p>Images are inserted using the &lt;img&gt; tag.</p>
+                        <code>&lt;img src="image.jpg" alt="description"&gt;</code>
+                      </div>
+                      <div class="html_note">
+                        <h2>Lists</h2>
+                        <p>Lists can be ordered (&lt;ol&gt;) or unordered (&lt;ul&gt;).</p>
+                        <p>Unordered List (Bullet Points):</p>
+                        <code>
+                          &lt;ul&gt;<br>
+                          &nbsp;&nbsp;&lt;li&gt;Apples&lt;/li&gt;<br>
+                          &nbsp;&nbsp;&lt;li&gt;Bananas&lt;/li&gt;<br>
+                          &lt;/ul&gt;
+                        </code>
+                        <p>Ordered List (Numbered):</p>
+                        <code>
+                          &lt;ol&gt;<br>
+                          &nbsp;&nbsp;&lt;li&gt;First item&lt;/li&gt;<br>
+                          &nbsp;&nbsp;&lt;li&gt;Second item&lt;/li&gt;<br>
+                          &lt;/ol&gt;
+                        </code>
+                      </div>
+                      <div class="html_note">
+                        <h2>Tables</h2>
+                        <p>Tables are created with the &lt;table&gt;, &lt;tr&gt;, and &lt;td&gt; tags.</p>
+                        <p>Table with headers:</p>
+                        <code>
+                          &lt;table&gt;<br>
+                          &nbsp;&nbsp;&lt;tr&gt;<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Name&lt;/th&gt;<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Age&lt;/th&gt;<br>
+                          &nbsp;&nbsp;&lt;/tr&gt;<br>
+                          &nbsp;&nbsp;&lt;tr&gt;<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;John&lt;/td&gt;<br>
+                          &nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;25&lt;/td&gt;<br>
+                          &nbsp;&nbsp;&lt;/tr&gt;<br>
+                          &lt;/table&gt;
+                        </code>
+                      </div>
+                      <div class="html_note">
+                        <h2>Span</h2>
+                        <p>The &lt;span&gt; tag is used to group inline-elements in a document.</p>
+                        <code>&lt;span&gt;</code>
+                      </div>
+                      <div class="html_note">
+                        <h2>Comments</h2>
+                        <p>Comments in HTML are written inside &lt;!-- comment --&gt; tags and are not displayed in the browser.</p>
+                        <code>&lt;!-- This is a comment --&gt;</code>
+                      </div>
+                </div>
+                <div class="cheatSheet_main_container-right">
+                    <div class="html_note">
+                        <h2>Forms</h2>
+                        <p>Forms are used to collect user input and are created with the &lt;form&gt; tag.</p>
+                        <p>Text input:</p>
+                        <code>&lt;input type="text" name="username"&gt;</code>
+                        <p>Password input:</p>
+                        <code>&lt;input type="password" name="password"&gt;</code>
+                        <p>Email input:</p>
+                        <code>&lt;input type="email" name="email"&gt;</code>
+                        <p>Checkbox:</p>
+                        <code>&lt;input type="checkbox" name="vehicle" value="Car"&gt; I have a car</code>
+                        <p>Radio buttons:</p>
+                        <code>&lt;input type="radio" name="gender" value="male"&gt; Male</code><br>
+                        <code>&lt;input type="radio" name="gender" value="female"&gt; Female</code>
+                        <p>Textarea:</p>
+                        <code>&lt;textarea name="message"&gt;&lt;/textarea&gt;</code>
+                        <p>Select dropdown:</p>
+                        <code>&lt;select name="cars"&gt;
+                          &lt;option value="volvo"&gt;Volvo&lt;/option&gt;
+                          &lt;option value="saab"&gt;Saab&lt;/option&gt;
+                          &lt;option value="opel"&gt;Opel&lt;/option&gt;
+                          &lt;option value="audi"&gt;Audi&lt;/option&gt;
+                        &lt;/select&gt;</code>
+                        <p>Submit button:</p>
+                        <code>&lt;input type="submit" value="Submit"&gt;</code>
+                      </div>
+                      <div class="html_note">
+                        <h2>Attributes</h2>
+                        <p>HTML elements can have attributes that provide additional information about them.</p>
+                        <p>Example Attribute Usage:</p>
+                        <p>Adding an ID to an element:</p>
+                        <code>&lt;div id="myDiv"&gt;&lt;/div&gt;</code>
+                        <p>Adding a class to an element:</p>
+                        <code>&lt;p class="highlight"&gt;Highlighted text&lt;/p&gt;</code>
+                        <p>Setting the width and height of an image:</p>
+                        <code>&lt;img src="example.jpg" alt="Example Image" width="100" height="100"&gt;</code>
+                      </div>
+                      <div class="html_note">
+                        <h2>Divisions</h2>
+                        <p>A web page's content is usually divided into blocks, specified by the <code>&lt;div&gt;</code> tag.</p>
+                      </div>
+                      <div class="html_note">
+                        <h2>Inline vs. Block Elements</h2>
+                        <p>Inline elements do not start on a new line and only take up as much width as necessary, whereas block elements start on a new line and take up the full width available.</p>
+                        <p>Inline Elements:</p>
+                        <code>&lt;span&gt;</code> <code>&lt;img&gt;</code> <code>&lt;a&gt;</code>
+                        <p>Block Elements:</p>
+                        <code>&lt;p&gt;</code> <code>&lt;div&gt;</code> <code>&lt;h1&gt;</code>
+                      </div>
+                      <div class="html_note">
+                        <h2>Linking CSS Stylesheet</h2>
+                        <p>To apply styles to your HTML document, you can link an external CSS stylesheet using the &lt;link&gt; tag.</p>
+                        <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>
+                      </div>
+                      <div class="html_note">
+                        <h2>Adding JavaScript</h2>
+                        <p>To add interactivity and behavior to your HTML document, you can include JavaScript code either inline or by linking an external JavaScript file.</p>
+                        <p>Inline JavaScript:</p>
+                        <code>&lt;script&gt;alert('Hello, World!');&lt;/script&gt;</code>
+                        <p>External JavaScript:</p>
+                        <code>&lt;script src="script.js"&gt;&lt;/script&gt;</code>
+                      </div>
+                      <div class="html_note">
+                        <h2>Adding Videos and Audios</h2>
+                        <p>HTML5 introduced the &lt;video&gt; and &lt;audio&gt; tags to embed media directly into web pages.</p>
+                        <p>Embedding a Video:</p>
+                        <code>&lt;video src="video.mp4" controls&gt;Video&lt;/video&gt;</code>
+                        <p>Embedding Audio:</p>
+                        <code>&lt;audio src="audio.mp3" controls&gt;Audio&lt;/audio&gt;</code>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../script.js"></script>
+</body>
+</html>
