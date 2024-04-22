@@ -378,6 +378,10 @@ code{
       letter-spacing: 0rem;
     }
   }
+  .js_note{
+    width: 246px;
+    overflow-wrap: break-word;
+  }
 }
 /* SETTINGS FOR EVEN SMALLER SCREENS */
 @media screen and (max-width: 370px){
