@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>Certification</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html" id="home">Home</a></li>
+                <li><a href="resume.html" id="resume">Resume</a></li>
+                <li><a href="certification.html" id="certification-html">Certification</a></li>
+                <li class="dropdown">
+                    <button class="dropbtn">Cheat Sheets</button>
+                    <div class="dropdown-content">
+                        <a href="html_cheat_sheet.html" id="html-cheat-sheet">HTML</a>
+                        <a href="css_cheat_sheet.html" id="css-cheat-sheet">CSS</a>
+                        <a href="js_cheat_sheet.html" id="js-cheat-sheet">JavaScript</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+   </header>
+    
+    <main id="certification_main">
+      <div class="cert-display" id="certification_display">
+        <div id="cert-img-display">
+          <img id="cert-img" src="../assets/cert-solo-html.png" alt="Sololearn HTML Certificate"><br>
+        </div>
+        <div id="viewCertFromSourceBtn">
+          <button class="downloadBtn" id="view-source-btn" onclick="window.open('https://www.sololearn.com/certificates/CC-YZPXPJRY', '_blank')">View Certificate from Source</button>
+        </div>
+      </div>
+      <div id="certification_list">
+        <div class="certification_list-divs">
+          <h3>Sololearn</h3>
+          <button class="cert-btn" id="cert-btn-solo-html" onclick="showCertificate('cert-solo-html')">Introduction to HTML</button>
+          <button class="cert-btn" id="cert-btn-solo-css" onclick="showCertificate('cert-solo-css')">Introduction to CSS</button>
+          <button class="cert-btn" id="cert-btn-solo-js" onclick="showCertificate('cert-solo-js')">Introduction to JavaScript</button>
+          <button class="cert-btn" id="cert-btn-solo-cpp" onclick="showCertificate('cert-solo-cpp')">C++ Intermediate</button>
+        </div>
+        <div class="certification_list-divs">
+          <h3>Udemy</h3>
+          <button class="cert-btn" id="cert-btn-udemy-py" onclick="showCertificate('cert-udemy-py')">Python Masterclass</button>
+          <button class="cert-btn" id="cert-btn-udemy-shell" onclick="showCertificate('cert-udemy-shell')">Linux Shell Scripting</button>
+          <button class="cert-btn" id="cert-btn-udemy-arduino" onclick="showCertificate('cert-udemy-arduino')">Arduino Workshop</button>
+        </div>
+        <div class="certification_list-divs">
+          <h3>LinkedIn Learning</h3>
+          <button class="cert-btn" id="cert-btn-linkedin-cpp" onclick="showCertificate('cert-linkedin-cpp')">C++ Essential Training</button>
+          <button class="cert-btn" id="cert-btn-linkedin-prog" onclick="showCertificate('cert-linkedin-prog')">Programming Fundamentals</button>
+          <button class="cert-btn" id="cert-btn-linkedin-oop" onclick="showCertificate('cert-linkedin-oop')">Object Oriented Design</button>
+          <button class="cert-btn" id="cert-btn-linkedin-py" onclick="showCertificate('cert-linkedin-py')">Python for Non-Programmers</button>
+        </div>
+      </div>
+    </main>
+    
+    <script src="../script.js"></script>
+    <script src="../scripts/cert_script.js"></script>
+</body>
+</html>

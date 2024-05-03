@@ -23,7 +23,7 @@ body {
 header {
   display: flex;
   justify-content: space-around;
-  align-items: stretch;
+  align-items: baseline;
   flex-wrap: wrap;
   background-color: none;
   color: black;
@@ -256,7 +256,7 @@ body >header >div{
 #certification-container-left{
   margin-right: 3rem;
 }
-#downloadBtn {
+.downloadBtn {
   padding: 1rem;
   font-weight: 600;
   font-size: large;
@@ -267,11 +267,76 @@ body >header >div{
   cursor: pointer;
   transition: all 0.3s ease;
   width: fit-content;
+}
+#downloadCV{
   margin-left: 5%;
 }
-#downloadBtn:hover {
+.downloadBtn:hover {
   background-color: rgb(103, 101, 101);
 }
+
+/* CERTIFICATION STYLING */
+
+#certification_main{
+  font-family: "Poppins", sans-serif;
+  max-width: 1386px;
+  margin: 0 auto;
+}
+#certification_display{
+  float: right;
+  width: 72%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#cert-img{
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  width: 100%;
+  height: 100%;
+}
+#view-source-btn{
+  margin: 0;
+}
+#viewCertFromSourceBtn{
+  margin-bottom: 2rem;
+}
+#certification_list{
+  float: left;
+  width: 25%;
+  background-color: #FAFAFA;
+  border-radius: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  height: fit-content;
+}
+
+.cert-btn{
+  padding: 0.2rem 0.3rem;
+  text-align: left;
+  border: none;
+  background: transparent;
+  font-size: 1.2rem;
+}
+.cert-btn:hover{
+  background-color: #928f8f;
+  border-radius: 4px;
+  cursor: pointer;
+
+}
+.cert-btn:active{
+  background-color: #807c7c;
+  border-radius: 4px;
+}
+.certification_list-divs{
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  font-size: 1.4rem;
+}
+
 
 /* CHEAT SHEET STYLING */
 #html_main,#css_main,#js_main{
@@ -366,6 +431,14 @@ code{
   #resume_content-right{
     padding: 0;
     width: 100%;
+  }
+  #certification_display{
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  #certification_list{
+    width: 100%;
+    margin-bottom: 2rem;
   }
 }
 /* SETTINGS FOR SMALLER SCREENS */
