@@ -13,6 +13,15 @@ function showCertificate(cert) {
         case 'cert-solo-js':
             updateCertDisplay('cert-solo-js.png', 'Sololearn Introduction to JavaScript Certificate', 'https://www.sololearn.com/certificates/CC-SVFGIDSE');
             break;
+        case 'cert-solo-sql':
+            updateCertDisplay('cert-solo-sql.png', 'Sololearn Introduction to SQL Certificate', 'https://www.sololearn.com/en/certificates/CC-SHGLKAS7');
+            break;
+        case 'cert-solo-sqlIntr':
+            updateCertDisplay('cert-solo-sqlIntr.png', 'Sololearn SQL Intermediate Certificate', 'https://www.sololearn.com/en/certificates/CC-BR557AGO');
+            break;
+        case 'cert-solo-csharp':
+            updateCertDisplay('cert-solo-csharp.png', 'Sololearn Introduction to C# Certificate', 'https://www.sololearn.com/en/certificates/CC-NY4WTR0O');
+            break;
         case 'cert-solo-cpp':
             updateCertDisplay('cert-solo-cpp.png', 'Sololearn C++ Intermediate Certificate', 'https://www.sololearn.com/certificates/CC-XISN80TV');
             break;      
