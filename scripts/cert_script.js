@@ -22,6 +22,12 @@ function showCertificate(cert) {
         case 'cert-solo-csharp':
             updateCertDisplay('cert-solo-csharp.jpg', 'Sololearn Introduction to C# Certificate', 'https://www.sololearn.com/en/certificates/CC-NY4WTR0O');
             break;
+        case 'cert-solo-csharp':
+            updateCertDisplay('cert-solo-csharp.jpg', 'Sololearn Introduction to C# Certificate', 'https://www.sololearn.com/en/certificates/CC-NY4WTR0O');
+            break;
+        case 'cert-solo-csharp-intermediate':
+            updateCertDisplay('cert-solo-csharp-intermediate.png', 'Sololearn Introduction to C# Certificate', 'https://www.sololearn.com/certificates/CC-77YXUYFI');
+            break;
         case 'cert-solo-cpp':
             updateCertDisplay('cert-solo-cpp.png', 'Sololearn C++ Intermediate Certificate', 'https://www.sololearn.com/certificates/CC-XISN80TV');
             break;      
@@ -45,6 +51,9 @@ function showCertificate(cert) {
             break;
         case 'cert-linkedin-py':
             updateCertDisplay('cert-linkedin-py.jpeg', 'LinkedIn Learning Python for Non-Programmers Certificate', 'https://www.linkedin.com/learning/certificates/4f70100e13f2b3edf8ce4eb33058002819f604ce274e680ed29cea749645f4eb?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_certifications_details%3BJRpsOQRpTB6qxWEMmFh1NA%3D%3D');
+            break;        
+        case 'cert-linkedin-rdb':
+            updateCertDisplay('cert-linkedin-RDB.jpeg', 'LinkedIn Learning Python for Non-Programmers Certificate', 'https://lnkd.in/gTR-ESXJ');
             break;        
         default:
             certImageDisplay.innerHTML = 'Certificate not found';
