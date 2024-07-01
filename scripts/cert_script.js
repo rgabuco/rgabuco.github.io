@@ -67,7 +67,7 @@ function updateCertDisplay(file, desc, url){
 
 function updateCertImageDisplay(file, desc){
     // Update the src attribute
-    certImageDisplay.setAttribute("src", `../assets/${file}`);
+    certImageDisplay.setAttribute("src", `../assets/certificates/${file}`);
     // Update the alt attribute
     certImageDisplay.setAttribute("alt", `${desc}`);
 }
